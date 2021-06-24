@@ -7,7 +7,6 @@ import PropTypes from 'prop-types';
 import TelzirContext from '../context/context';
 
 export default function TelzirProvider({ children }) {
-  const [cardsRemovidos, setCardsRemovidos] = useState(0)
   const [parOrigemDestino, setparOrigemDestino] = useState(
     {
       '011': ['016', '017', '018'],
@@ -20,8 +19,6 @@ export default function TelzirProvider({ children }) {
   const context = {
     parOrigemDestino,
     setparOrigemDestino,
-    cardsRemovidos,
-    setCardsRemovidos,
   };
 
   return (
