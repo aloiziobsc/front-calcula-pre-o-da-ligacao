@@ -1,0 +1,66 @@
+.center {
+    text-align: center;
+    align-items: center;
+}
+
+.addMargin {
+    margin: 10px;
+}
+
+.card-div {
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    height:auto;
+}
+
+.card-container {
+    border: 1px solid #BBD3FE;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow:  5px 5px 8px #385180, -1px -1px 1px #97AACC;
+    background-image: linear-gradient(-135deg, #201db3, #2b0469, #201db3);
+    margin-bottom: 20px;
+    margin-right: 10px;
+    min-width: 330px;
+    max-width: 500px;
+    animation: animation-move 0.35s;
+    animation-direction: normal;
+}
+
+/* .removeCardAnimation {
+    animation: animation-move 0.35s;
+    animation-direction: reverse;
+} */
+
+.card-container:hover {
+    background-image: linear-gradient(-45deg, #201db3, #2b0469, #201db3);
+}
+
+.button-X {
+    float: right;
+    border-radius: 10px;
+}
+
+.button-X:target {
+    animation: animation-move 0.35s;
+    animation-direction: reverse;
+}
+
+@keyframes animation-move {
+    from {
+      opacity: 0;
+      transform: translateX(-35%);
+    } to {
+      opacity: 1;
+      transform: translateX(0%);
+    }
+  }
+
+.arredonda {
+    border-radius: 10px;
+}
+
+.escolha-seu-plano {
+    display: flex;
+}
