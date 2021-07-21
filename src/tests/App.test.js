@@ -2,9 +2,9 @@ import React from 'react';
 import { render, fireEvent } from '@testing-library/react';
 import App from '../App';
 
-test('renders título Telzir', () => {
+test('renders título Telefones', () => {
   const { getAllByText } = render(<App />);
-  const tituloText = getAllByText(/Telzir/i)[0];
+  const tituloText = getAllByText(/Telefones/i)[0];
   expect(tituloText).toBeInTheDocument();
 });
 

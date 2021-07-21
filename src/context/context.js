@@ -1,5 +1,5 @@
 import { createContext } from 'react';
 
-const TelzirContext = createContext();
+const TelefonesContext = createContext();
 
-export default TelzirContext;
+export default TelefonesContext;

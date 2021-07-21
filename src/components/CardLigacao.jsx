@@ -1,7 +1,7 @@
 import React, { useContext, useState, useEffect } from 'react';
 import SeuPlano from './SeuPlano'
 import ComparacaoPrecos from './ComparacaoPrecos'
-import TelzirContext from '../context/context'
+import TelefonesContext from '../context/context'
 import { escolheOrigem } from '../services/index'
 
 function CardLigacao() {
@@ -14,7 +14,7 @@ function CardLigacao() {
 
   const {
     parOrigemDestino,
-  } = useContext(TelzirContext)
+  } = useContext(TelefonesContext)
 
   useEffect(() => {
   }, [origem, mostrarPreco]);

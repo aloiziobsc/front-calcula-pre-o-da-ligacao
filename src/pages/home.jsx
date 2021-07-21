@@ -15,8 +15,8 @@ function Home() {
 
   return (
     <React.Fragment>
-      <h1 className="center">Telzir 📱</h1>
-      <p>Na Telzir é mais fácil controlar seus gastos, aqui você pode simular seu consumo.
+      <h1 className="center">Empresa Telefones 📱</h1>
+      <p>Na Telefones é mais fácil controlar seus gastos, aqui você pode simular seu consumo.
         De forma rápida e prática. Escolhendo o melhor plano para cada ligação 🐖💰.</p>
       <h2>Faça sua simulação:</h2>
       <div className="card-div center">

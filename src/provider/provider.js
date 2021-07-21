@@ -4,9 +4,9 @@ import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 
 // Context
-import TelzirContext from '../context/context';
+import TelefonesContext from '../context/context';
 
-export default function TelzirProvider({ children }) {
+export default function TelefonesProvider({ children }) {
   const [parOrigemDestino, setparOrigemDestino] = useState(
     {
       '011': ['016', '017', '018'],
@@ -22,12 +22,12 @@ export default function TelzirProvider({ children }) {
   };
 
   return (
-    <TelzirContext.Provider value={ context }>
+    <TelefonesContext.Provider value={ context }>
       { children }
-    </TelzirContext.Provider>
+    </TelefonesContext.Provider>
   );
 }
 
-TelzirProvider.propTypes = {
+TelefonesProvider.propTypes = {
   children: PropTypes.node.isRequired,
 };
